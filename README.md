@@ -1,0 +1,6 @@
+# springBootDemo4zyp
+这个仅为自学springboot搭建的测试demo
+其中使用框架为springMVC+springboot+MyBatis
+整合了redis集群,mongodb
+集成了swagger
+如有不足,尽情谅解

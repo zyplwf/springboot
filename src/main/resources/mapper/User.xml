@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zyp.dao.UserMapper">
+	<!-- 根据用户名称查询用户信息 -->
+	<select id="getUserByName" parameterType="com.zyp.moudle.User"
+		resultType="com.zyp.moudle.User">
+		select UID as id,USER_NAME as name,PASS_WORD as passWord from user_regist where USER_NAME like CONCAT('%',#{name},'%')
+	</select>
+</mapper>
